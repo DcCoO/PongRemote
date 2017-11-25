@@ -19,9 +19,7 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        NotificationCenter.default.addObserver(self, selector: #selector(controllerDidConnect), name: Notification.Name.GCControllerDidConnect, object: nil)
-        
-        //remoteView.transform = CGAffineTransform.identity.rotated(by: degreesToRadians(degrees: 45))
+        initRemote()
     }
     
     //REMOTE
